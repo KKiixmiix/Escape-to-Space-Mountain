@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ebe90bdbfc153dd449fbd514428435e0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Mushroom: {fileID: 2800000, guid: 57d466a1374f5b4429b4ed7ad29337e1, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
