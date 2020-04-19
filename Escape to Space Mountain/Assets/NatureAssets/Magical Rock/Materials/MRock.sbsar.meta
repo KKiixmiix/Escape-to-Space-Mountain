@@ -1,57 +1,156 @@
 fileFormatVersion: 2
 guid: f7212198e558b7341b401baa0b80e1d7
 ScriptedImporter:
-  fileIDToRecycleName:
-    2100000: MRock_Green_LOD0
-    2100002: MRock_Green_LOD1
-    2100004: MRock_Green_LOD2
-    2100006: MRock_LOD0
-    2100008: MRock_LOD1
-    2100010: MRock_LOD2
-    2800000: MRock_Green_LOD0 - baseColor
-    2800002: MRock_Green_LOD0 - normal
-    2800004: MRock_Green_LOD0 - metallic
-    2800006: MRock_Green_LOD0 - height
-    2800008: MRock_Green_LOD0 - ambientOcclusion
-    2800010: MRock_Green_LOD0 - emissive
-    2800012: MRock_Green_LOD1 - baseColor
-    2800014: MRock_Green_LOD1 - normal
-    2800016: MRock_Green_LOD1 - metallic
-    2800018: MRock_Green_LOD1 - height
-    2800020: MRock_Green_LOD1 - ambientOcclusion
-    2800022: MRock_Green_LOD1 - emissive
-    2800024: MRock_Green_LOD2 - baseColor
-    2800026: MRock_Green_LOD2 - normal
-    2800028: MRock_Green_LOD2 - metallic
-    2800030: MRock_Green_LOD2 - height
-    2800032: MRock_Green_LOD2 - ambientOcclusion
-    2800034: MRock_Green_LOD2 - emissive
-    2800036: MRock_LOD0 - baseColor
-    2800038: MRock_LOD0 - normal
-    2800040: MRock_LOD0 - metallic
-    2800042: MRock_LOD0 - height
-    2800044: MRock_LOD0 - ambientOcclusion
-    2800046: MRock_LOD0 - emissive
-    2800048: MRock_LOD1 - baseColor
-    2800050: MRock_LOD1 - normal
-    2800052: MRock_LOD1 - metallic
-    2800054: MRock_LOD1 - height
-    2800056: MRock_LOD1 - ambientOcclusion
-    2800058: MRock_LOD1 - emissive
-    2800060: MRock_LOD2 - baseColor
-    2800062: MRock_LOD2 - normal
-    2800064: MRock_LOD2 - metallic
-    2800066: MRock_LOD2 - height
-    2800068: MRock_LOD2 - ambientOcclusion
-    2800070: MRock_LOD2 - emissive
-    11400000: sbsar
-    11400002: graph1
-    11400004: graph2
-    11400006: graph3
-    11400008: graph4
-    11400010: graph5
-    11400012: graph0
+  internalIDToNameTable:
+  - first:
+      21: 2100000
+    second: MRock_Green_LOD0
+  - first:
+      21: 2100002
+    second: MRock_Green_LOD1
+  - first:
+      21: 2100004
+    second: MRock_Green_LOD2
+  - first:
+      21: 2100006
+    second: MRock_LOD0
+  - first:
+      21: 2100008
+    second: MRock_LOD1
+  - first:
+      21: 2100010
+    second: MRock_LOD2
+  - first:
+      28: 2800000
+    second: MRock_Green_LOD0 - baseColor
+  - first:
+      28: 2800002
+    second: MRock_Green_LOD0 - normal
+  - first:
+      28: 2800004
+    second: MRock_Green_LOD0 - metallic
+  - first:
+      28: 2800006
+    second: MRock_Green_LOD0 - height
+  - first:
+      28: 2800008
+    second: MRock_Green_LOD0 - ambientOcclusion
+  - first:
+      28: 2800010
+    second: MRock_Green_LOD0 - emissive
+  - first:
+      28: 2800012
+    second: MRock_Green_LOD1 - baseColor
+  - first:
+      28: 2800014
+    second: MRock_Green_LOD1 - normal
+  - first:
+      28: 2800016
+    second: MRock_Green_LOD1 - metallic
+  - first:
+      28: 2800018
+    second: MRock_Green_LOD1 - height
+  - first:
+      28: 2800020
+    second: MRock_Green_LOD1 - ambientOcclusion
+  - first:
+      28: 2800022
+    second: MRock_Green_LOD1 - emissive
+  - first:
+      28: 2800024
+    second: MRock_Green_LOD2 - baseColor
+  - first:
+      28: 2800026
+    second: MRock_Green_LOD2 - normal
+  - first:
+      28: 2800028
+    second: MRock_Green_LOD2 - metallic
+  - first:
+      28: 2800030
+    second: MRock_Green_LOD2 - height
+  - first:
+      28: 2800032
+    second: MRock_Green_LOD2 - ambientOcclusion
+  - first:
+      28: 2800034
+    second: MRock_Green_LOD2 - emissive
+  - first:
+      28: 2800036
+    second: MRock_LOD0 - baseColor
+  - first:
+      28: 2800038
+    second: MRock_LOD0 - normal
+  - first:
+      28: 2800040
+    second: MRock_LOD0 - metallic
+  - first:
+      28: 2800042
+    second: MRock_LOD0 - height
+  - first:
+      28: 2800044
+    second: MRock_LOD0 - ambientOcclusion
+  - first:
+      28: 2800046
+    second: MRock_LOD0 - emissive
+  - first:
+      28: 2800048
+    second: MRock_LOD1 - baseColor
+  - first:
+      28: 2800050
+    second: MRock_LOD1 - normal
+  - first:
+      28: 2800052
+    second: MRock_LOD1 - metallic
+  - first:
+      28: 2800054
+    second: MRock_LOD1 - height
+  - first:
+      28: 2800056
+    second: MRock_LOD1 - ambientOcclusion
+  - first:
+      28: 2800058
+    second: MRock_LOD1 - emissive
+  - first:
+      28: 2800060
+    second: MRock_LOD2 - baseColor
+  - first:
+      28: 2800062
+    second: MRock_LOD2 - normal
+  - first:
+      28: 2800064
+    second: MRock_LOD2 - metallic
+  - first:
+      28: 2800066
+    second: MRock_LOD2 - height
+  - first:
+      28: 2800068
+    second: MRock_LOD2 - ambientOcclusion
+  - first:
+      28: 2800070
+    second: MRock_LOD2 - emissive
+  - first:
+      114: 11400000
+    second: sbsar
+  - first:
+      114: 11400002
+    second: graph1
+  - first:
+      114: 11400004
+    second: graph2
+  - first:
+      114: 11400006
+    second: graph3
+  - first:
+      114: 11400008
+    second: graph4
+  - first:
+      114: 11400010
+    second: graph5
+  - first:
+      114: 11400012
+    second: graph0
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
