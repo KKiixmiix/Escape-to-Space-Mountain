@@ -33,7 +33,7 @@ namespace OldTreeStudio.Example
             Vector3 player = _player.transform.position;
             Vector3 picked = _pickedUpGO.transform.position;
             //Debug.Log("Player:" + player + ", PUOb r: " + picked + "; distance: " + Vector3.Distance(player, picked));
-            if (!up && limit > Vector3.Distance(player, _pickedUpGO.transform.position)) {
+            if (!up && limit > Vector3.Distance(player, picked)) {
                 Debug.Log("Player position (up): " + player + ", " + picked);
                 up = true;
                 pugoHalo.enabled = false;

@@ -10,9 +10,10 @@ using System.Collections;
 public class Floater : MonoBehaviour
 {
     // User Inputs
-    public float degreesPerSecond = 15.0f;
+    public float degreesPerSecond = 0f;
     public float amplitude = 0.5f;
-    public float frequency = 1f;
+    public float frequency = 0.1f;
+    public float multiplier = 3f;
 
     // Position Storage Variables
     Vector3 posOffset = new Vector3();
@@ -33,9 +34,10 @@ public class Floater : MonoBehaviour
         // Float up/down with a Sin()
         tempPos = transform.position;
         //tempPos = posOffset;
-        tempPos.y = posOffset.y + Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * amplitude;
-        tempPos.x += .3f + (Random.value - .3f);
-        tempPos.z += .4f + (Random.value - .3f);
+        tempPos.x = posOffset.x + Mathf.Cos(Time.fixedTime * Mathf.PI * (multiplier * frequency)) * amplitude;
+        tempPos.y = posOffset.y + Mathf.Sin(Time.fixedTime * Mathf.PI * frequency) * (multiplier * amplitude);
+        tempPos.z = posOffset.z + Mathf.Sin(Time.fixedTime * Mathf.PI * (multiplier * frequency)) * amplitude;
+
         // Frenetic fly motion
         //tempPos.x += Random.value - .5f;
         //tempPos.z += Random.value - .5f;
