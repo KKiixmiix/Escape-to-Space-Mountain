@@ -31,7 +31,7 @@ public class Floater : MonoBehaviour
         // Spin object around Y-Axis
         transform.Rotate(new Vector3(0f, Time.deltaTime * degreesPerSecond, 0f), Space.World);
 
-        // Float up/down with a Sin()
+        // Float up/down in a spiral
         tempPos = transform.position;
         //tempPos = posOffset;
         tempPos.x = posOffset.x + Mathf.Cos(Time.fixedTime * Mathf.PI * (multiplier * frequency)) * amplitude;
