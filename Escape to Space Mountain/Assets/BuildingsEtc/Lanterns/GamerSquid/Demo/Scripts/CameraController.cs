@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private bool lockCursor = true;
 
-    private Camera _camera;
+    public Camera _camera;
     private float _cameraSpeed = 1;
 
     private const KeyCode KEY_FORWARD = KeyCode.W;
@@ -35,22 +35,57 @@ public class CameraController : MonoBehaviour {
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
+    public Transform target;
+    public Vector3 offset;
+    public float zoomSpeed = 4f;
+    public float zoomMin = 5f;
+    public float zoomMax = 15f;
+    public float pitch2 = 2f;
+    public float yawSpeed = 100f;
+    private float currentZoom = 10f;
+    private float currentYaw = 0f;
 
     // Use this for initialization
     void Start () {
-        _camera = GetComponent<Camera>();
+        //_camera = GetComponent<Camera>();
+        //_camera = GameObject.FindGameObjectsWithTag("MainCamera")[0] as Camera;
 
         if (_camera == null)
         {
             Debug.Log("Error: There is no main camera in use...");
         } else
         {
-          //  Init(transform, _camera.transform);
+            //Debug.Log(_camera);
+            //  Init(transform, _camera.transform);
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    public void OnGUI()
+    {
+        if (Event.current.type == EventType.ScrollWheel)
+        {
+            //Debug.Log("Event type is scroll wheel... " + Input.mouseScrollDelta);
+            // do stuff with  Event.current.delta
+            if (Input.mouseScrollDelta.y == 0)
+            {
+                // Handle touchpad scroll using Event.current.delta.y
+            }
+            else
+            {
+                // Handle mouse scroll using Input.mouseScrollDelta.y
+            }
+        }
+
+        //Debug.Log(Event.current.delta);
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+        currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        currentZoom = Mathf.Clamp(currentZoom, zoomMin, zoomMax);
+
+        currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
 
         if (_camera != null)
         {
@@ -63,6 +98,13 @@ public class CameraController : MonoBehaviour {
         }
             
 	}
+
+    private void LateUpdate()
+    {
+        transform.position = target.position - offset * currentZoom;
+        transform.LookAt(target.position + Vector3.up * pitch2);
+        transform.RotateAround(target.position, Vector3.up, currentYaw);
+    }
 
     private void GetSpeed ()
     {
