@@ -189,7 +189,7 @@ public class CameraController : MonoBehaviour {
         }
         else if (Input.GetMouseButtonUp(0))
         {
-            _cursorIsLocked = true;
+            _cursorIsLocked = !true;
         }
 
         if (_cursorIsLocked)
