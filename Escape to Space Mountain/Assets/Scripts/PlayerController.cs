@@ -30,9 +30,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("MousPos: " + Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100, movementMask))
             {
-                motor.MoveToPoint(hit.point);
-
                 RemoveFocus();
+                motor.MoveToPoint(hit.point);
             }
         }
 
