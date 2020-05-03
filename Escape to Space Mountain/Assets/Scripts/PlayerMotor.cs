@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/**
+ *  Authors:    Koch 5/2020
+ *  
+ * Resources:   https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -57,6 +62,7 @@ public class PlayerMotor : MonoBehaviour
         {
             moving = false;
             animator.SetTrigger("idleTrigger");
+            // Bow if Yuna reached the Interactable target
             if (target)
             {
                 animator.SetTrigger("bowTrigger");
