@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: FireWoodWand
   m_EditorClassIdentifier: 
   name: FireWoodWand
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 35d953e8d65b5418cb2fa4eaecd624a9, type: 3}
   isDefaultItem: 0

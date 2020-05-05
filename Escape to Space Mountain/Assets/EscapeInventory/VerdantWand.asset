@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: VerdantWand
   m_EditorClassIdentifier: 
   name: VerdantWand
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: d01fc4ad9e6b3401eacc0a4aaf590a37, type: 3}
   isDefaultItem: 0
