@@ -43,26 +43,30 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Hit: " + hit.collider.name + " " + hit.point);
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
 
-                if (interactable != null)
+                if (interactable == null)
                 {
-                    SetFocus(interactable);
+                    interactable = hit.collider.transform.parent.GetComponent<Interactable>();
                 }
+                SetFocus(interactable);
             }
         }
     }
 
     void SetFocus(Interactable newFocus)
     {
-        if (newFocus != focus)
+        if (newFocus != null)
         {
-            if (focus != null)
-                focus.OnDefocused();
+            if (newFocus != focus)
+            {
+                if (focus != null)
+                    focus.OnDefocused();
 
-            focus = newFocus;
-            //motor.FollowTarget(newFocus);
+                focus = newFocus;
+                //motor.FollowTarget(newFocus);
+            }
+            newFocus.OnFocused(transform);
         }
 
-        newFocus.OnFocused(transform);
     }
 
     void RemoveFocus()

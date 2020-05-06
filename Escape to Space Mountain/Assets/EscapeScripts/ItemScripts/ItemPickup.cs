@@ -14,7 +14,7 @@ public class ItemPickup : Interactable
 
     }
 
-    void PickUp()
+    public void PickUp()
     {
         Debug.Log("Retrieving " + item.name);
 
